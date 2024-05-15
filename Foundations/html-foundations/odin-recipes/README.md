@@ -1,1 +1,1 @@
-This is the recepies project!
+This is the recipes project!
