@@ -6,7 +6,13 @@ body {
 h1 {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.container {
+  display: block;
+}
 .recipe {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
+  padding: 20px;
+  display: block;
 }
