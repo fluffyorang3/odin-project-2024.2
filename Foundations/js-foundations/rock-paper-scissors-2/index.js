@@ -1,6 +1,5 @@
 function getComputerChoice (computerChoiceInt, computerChoice = "")  {
   computerChoiceInt = Math.random();  
-
   computerChoiceInt <= 1/3 ? computerChoice = "Rock" : 
   computerChoiceInt > 1/3 && computerChoiceInt <= 2/3 ? computerChoice = "Paper" :
   computerChoice = "Scissors";
@@ -17,7 +16,6 @@ function getHumanChoice (humanChoice) {
   }
   return humanChoice;
 }
-
 
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
@@ -43,12 +41,9 @@ function playRound(humanChoice, computerChoice) {
     humanScore++;
   }
 }
+
 let humanScore = 0;
 let computerScore = 0;
-
-
-
-
 
 function playGame() {
   for (let i = 0; i < 5; i++) {
