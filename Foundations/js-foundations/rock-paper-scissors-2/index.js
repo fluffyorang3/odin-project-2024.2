@@ -55,6 +55,9 @@ function playGame() {
     console.log(`Human score ${humanScore}`)
     console.log(`Computer score ${computerScore}`)
   }
+  humanScore > computerScore ? console.log("You won the game!") :
+  humanScore < computerScore ? console.log("You lost the game!") :
+  console.log("You tied!");
 }
 
 playGame();
