@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'montserratthin';
+  src: url('montserrat-variablefont_wght-webfont.woff2') format('truetype'),
+       url('montserrat-variablefont_wght-webfont.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.hello {
+  color: red;
+  background: url('./icon.png');
+  font-style: 'montserratthin';
+}
+

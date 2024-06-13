@@ -1,0 +1,25 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "lodash": "^4.17.21",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "csv-loader": "^3.0.5",
+    "json5": "^2.2.3",
+    "toml": "^3.0.0",
+    "xml-loader": "^1.2.1",
+    "yamljs": "^0.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
