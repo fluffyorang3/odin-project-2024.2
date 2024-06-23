@@ -3,15 +3,15 @@ const menu = document.getElementById('menu')
 
 
 button.addEventListener("click", () => {
-    hide()
+    hide(menu)
 })
 
 
-function hide() {
-    if (menu.style.display === "none") {
-        menu.style.display = "block";
+function hide(element) {
+    if (element.style.display === "none") {
+        element.style.display = "block";
     } else {
-        menu.style.display = "none"
+        element.style.display = "none"
     }
 }
 
