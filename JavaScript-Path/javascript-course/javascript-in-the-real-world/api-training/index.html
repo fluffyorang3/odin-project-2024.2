@@ -6,9 +6,38 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Per Kikin 🩷</h1>
     <img src="#" alt="">
+    <form id="gif-form">
+        <button type="submit">Search</button>
+        <input type="text" name="search-item" id="search-item" placeholder="Search item">
+    </form>
     <script>
+        const img = document.querySelector('img')
         
+        const form = document.getElementById('gif-form')
+
+        let searchItem = document.getElementById('search-item').value
+
+        console.log(searchItem)
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            let searchItem = document.getElementById('search-item').value
+
+            console.log(searchItem)
+
+            fetch(`https://api.giphy.com/v1/gifs/translate?api_key=DvDzPAoR5EUuq1y8kislxJMtwNr7k2YF&s=${searchItem}`, {mode: 'cors'})
+            .then(function(response) {
+                return response.json()
+            })
+            .then(function(response) {
+                img.src = response.data.images.original.url
+            })
+
+        })
+    
     </script>
 </body>
 </html>
